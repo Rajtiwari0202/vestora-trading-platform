@@ -1,27 +1,51 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <div className="container p-5 mb-5">
-      <div className="row text-center">
+    <section>
+      <div className="container text-center">
+
         <img
           src="media/images/homeHero.png"
-          alt="Hero Image"
-          className="mb-5"
+          alt="Vestora dashboard preview"
+          className="img-fluid mb-5"
+          style={{
+            maxWidth: "900px",
+            margin: "0 auto",
+          }}
         />
-        <h1 className="mt-5">Invest in everything</h1>
-        <p>
-          Online platform to invest in stocks, derivatives, mutual funds, and
-          more
-        </p>
-        <button
-          className="p-2 btn btn-primary fs-5 mb-5"
-          style={{ width: "20%", margin: "0 auto" }}
+
+        <h1
+          className="mb-3"
+          style={{
+            fontSize: "48px",
+            fontWeight: "700",
+          }}
         >
-          Signup Now
-        </button>
+          Invest in everything
+        </h1>
+
+        <p
+          className="text-muted mb-4"
+          style={{
+            fontSize: "20px",
+          }}
+        >
+          Trade stocks, ETFs, mutual funds
+          and track your portfolio
+          from one clean platform.
+        </p>
+
+        <Link
+          to="/signup"
+          className="btn btn-primary px-4 py-2 fs-5"
+        >
+          Sign up now
+        </Link>
+
       </div>
-    </div>
+    </section>
   );
 }
 

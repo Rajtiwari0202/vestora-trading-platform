@@ -1,39 +1,83 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Pricing() {
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-4">
-          <h1 className="mb-3 fs-2">Unbeatable pricing</h1>
-          <p>
-            We pioneered the concept of discount broking and price transparency
-            in India. Flat fees and no hidden charges.
-          </p>
-          <a href="" style={{ textDecoration: "none" }}>
-            See Pricing{" "}
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-          </a>
-        </div>
-        <div className="col-2"></div>
-        <div className="col-6  mb-5">
-          <div className="row text-center">
-            <div className="col p-3 border">
-              <h1 className="mb-3">₹0</h1>
-              <p>
-                Free equity delivery and
-                <br />
-                direct mutual funds
-              </p>
-            </div>
-            <div className="col p-3 border">
-              <h1 className="mb-3">₹20</h1>
-              <p>Intraday and F&O</p>
-            </div>
+    <section>
+      <div className="container">
+
+        <div className="row align-items-center">
+
+          <div className="col-lg-5 mb-4">
+
+            <h2 className="mb-3">
+              Transparent pricing
+            </h2>
+
+            <p className="text-muted">
+              Built for investors who want
+              simple pricing with no hidden fees.
+            </p>
+
+            <Link to="/pricing">
+              See pricing
+              {" "}
+              <i
+                className="fa fa-long-arrow-right"
+                aria-hidden="true"
+              ></i>
+            </Link>
+
           </div>
+
+          <div className="col-lg-7">
+
+            <div className="row text-center">
+
+              <div className="col-md-6 mb-3">
+
+                <div className="border rounded p-4 h-100">
+
+                  <h2 className="mb-3">
+                    ₹0
+                  </h2>
+
+                  <p className="text-muted">
+                    Equity delivery
+                    <br />
+                    and mutual fund investing
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div className="col-md-6 mb-3">
+
+                <div className="border rounded p-4 h-100">
+
+                  <h2 className="mb-3">
+                    ₹20
+                  </h2>
+
+                  <p className="text-muted">
+                    Flat intraday
+                    <br />
+                    and derivatives fee
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
+
       </div>
-    </div>
+    </section>
   );
 }
 

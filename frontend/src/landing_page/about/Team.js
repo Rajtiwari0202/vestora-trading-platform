@@ -2,41 +2,66 @@ import React from "react";
 
 function Team() {
   return (
-    <div className="container">
-      <div className="row p-3 mt-5 border-top">
-        <h1 className="text-center ">People</h1>
-      </div>
+    <section>
+      <div className="container">
+        <div className="row border-top pt-5">
+          <h2 className="text-center mb-5">Meet the builder</h2>
+        </div>
 
-      <div
-        className="row p-3 text-muted"
-        style={{ lineHeight: "1.8", fontSize: "1.2em" }}
-      >
-        <div className="col-6 p-3 text-center">
-          <img
-            src="media/images/nithinKamath.jpg"
-            style={{ borderRadius: "100%", width: "50%" }}
-          />
-          <h4 className="mt-5">Nithin Kamath</h4>
-          <h6>Founder, CEO</h6>
-        </div>
-        <div className="col-6 p-3">
-          <p>
-            Nithin bootstrapped and founded Zerodha in 2010 to overcome the
-            hurdles he faced during his decade long stint as a trader. Today,
-            Zerodha has changed the landscape of the Indian broking industry.
-          </p>
-          <p>
-            He is a member of the SEBI Secondary Market Advisory Committee
-            (SMAC) and the Market Data Advisory Committee (MDAC).
-          </p>
-          <p>Playing basketball is his zen.</p>
-          <p>
-            Connect on <a href="">Homepage</a> / <a href="">TradingQnA</a> /{" "}
-            <a href="">Twitter</a>
-          </p>
+        <div
+          className="row align-items-center text-muted"
+          style={{
+            lineHeight: "1.9",
+            fontSize: "18px",
+          }}
+        >
+          <div className="col-lg-6 text-center mb-4">
+            <img
+              src="media\images\RajTiwariImage.jpg"
+              alt="Raj Tiwari"
+              className="img-fluid"
+              style={{
+                width: "280px",
+                height: "280px",
+                objectFit: "cover",
+                borderRadius: "50%",
+              }}
+            />
+
+            <h4 className="mt-4">Raj Tiwari</h4>
+
+            <p>Founder & Full Stack Developer</p>
+          </div>
+
+          <div className="col-lg-6">
+            <p>
+              I built Vestora as a full-stack fintech platform to deeply
+              understand how modern trading and investment systems are designed.
+            </p>
+
+            <p>
+              The idea started with a simple goal: create an investing platform
+              that feels clean, intuitive and trustworthy — while learning how
+              real-world fintech products handle portfolios, market workflows
+              and user experience.
+            </p>
+
+            <p>
+              Vestora is being built with React, routing, reusable UI
+              components, backend APIs, authentication, portfolio management and
+              deployment — with the mindset of building a production-ready
+              product, not just another practice project.
+            </p>
+
+            <p>
+              Outside of development, I enjoy problem solving, data structures &
+              algorithms, and building products that combine clean engineering
+              with strong user experience.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

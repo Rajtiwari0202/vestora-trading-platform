@@ -1,47 +1,81 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Brokerage() {
   return (
-    <div className="container">
-      <div className="row p-5 mt-5 text-center border-top">
-        <div className="col-8 p-4">
-          <a href="" style={{ textDecoration: "none" }}>
-            <h3 className="fs-5">Brokerage calculator</h3>
-          </a>
-          <ul
-            style={{ textAlign: "left", lineHeight: "2.5", fontSize: "12px" }}
-            className="text-mut"
-          >
-            <li>
-              Call & Trade and RMS auto-squareoff:Additional charges of ₹50 +
-              GST per order.
-            </li>
-            <li>Digital contract notes will be sent via e-mail.</li>
-            <li>
-              Physical copies of contract notes, if required, shall be charged
-              ₹20 per contract note. Courier charges apply.
-            </li>
-            <li>
-              For NRI account (non-PIS), 0.5% or ₹100 per executed order for
-              equity (whichever is lower).
-            </li>
-            <li>
-              For NRI account (PIS), 0.5% or ₹200 per executed order for equity
-              (whichever is lower).
-            </li>
-            <li>
-              If the account is in debit balance, any order placed will be
-              charged ₹40 per executed order instead of ₹20 per executed order.
-            </li>
-          </ul>
+    <section>
+      <div className="container border-top pt-5">
+
+        <div className="row">
+
+          <div className="col-lg-8 mb-4">
+
+            <Link to="/pricing">
+              <h4 className="mb-4">
+                Brokerage calculator
+              </h4>
+            </Link>
+
+            <ul
+              className="text-muted"
+              style={{
+                lineHeight: "2",
+                fontSize: "15px",
+              }}
+            >
+              <li>
+                Flat brokerage on intraday
+                and derivatives.
+              </li>
+
+              <li>
+                Digital contract notes
+                delivered instantly.
+              </li>
+
+              <li>
+                Transparent pricing with
+                no hidden fees.
+              </li>
+
+              <li>
+                Clear breakdown for
+                every transaction.
+              </li>
+
+              <li>
+                Easy portfolio tracking
+                and order history.
+              </li>
+
+              <li>
+                Designed for fast,
+                modern investing.
+              </li>
+            </ul>
+
+          </div>
+
+          <div className="col-lg-4">
+
+            <Link to="/pricing">
+              <h4>
+                Full pricing list
+              </h4>
+            </Link>
+
+            <p className="text-muted mt-3">
+              Explore charges,
+              account fees and
+              brokerage details.
+            </p>
+
+          </div>
+
         </div>
-        <div className="col-4 p-4">
-          <a href="" style={{ textDecoration: "none" }}>
-            <h3 className="fs-5">List of charges</h3>
-          </a>
-        </div>
+
       </div>
-    </div>
+    </section>
   );
 }
 

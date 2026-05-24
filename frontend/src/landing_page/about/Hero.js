@@ -2,57 +2,90 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="container">
-      <div className="row p-5 mt-5 mb-5">
-        <h1 className="fs-2 text-center">
-          We pioneered the discount broking model in India
-          <br />
-          Now, we are breaking ground with our technology.
-        </h1>
-      </div>
+    <section>
+      <div className="container">
 
-      <div
-        className="row p-5 mt-5 border-top text-muted"
-        style={{ lineHeight: "1.8", fontSize: "1.2em" }}
-      >
-        <div className="col-6 p-5">
-          <p>
-            We kick-started operations on the 15th of August, 2010 with the goal
-            of breaking all barriers that traders and investors face in India in
-            terms of cost, support, and technology. We named the company
-            Zerodha, a combination of Zero and "Rodha", the Sanskrit word for
-            barrier.
+        <div className="row text-center py-5">
+
+          <h1
+            className="mb-4"
+            style={{
+              fontSize: "40px",
+              fontWeight: "700",
+            }}
+          >
+            We’re building investing
+            for the next generation.
+          </h1>
+
+          <p
+            className="text-muted"
+            style={{
+              fontSize: "18px",
+            }}
+          >
+            Vestora was built with one goal —
+            make investing feel simple,
+            transparent and accessible.
           </p>
-          <p>
-            Today, our disruptive pricing models and in-house technology have
-            made us the biggest stock broker in India.
-          </p>
-          <p>
-            Over 1+ Crore clients place millions of orders every day through our
-            powerful ecosystem of investment platforms, contributing over 15% of
-            all Indian retail trading volumes.
-          </p>
+
         </div>
-        <div className="col-6 p-5">
-          <p>
-            In addition, we run a number of popular open online educational and
-            community initiatives to empower retail traders and investors.
-          </p>
-          <p>
-            <a href="" style={{ textDecoration: "none" }}>
-              Rainmatter
-            </a>
-            , our fintech fund and incubator, has invested in several fintech
-            startups with the goal of growing the Indian capital markets.
-          </p>
-          <p>
-            And yet, we are always up to something new every day. Catch up on
-            the latest updates on our blog or see what the media is saying about
-            us.
-          </p>
+
+        <div
+          className="row border-top pt-5 text-muted"
+          style={{
+            lineHeight: "1.9",
+            fontSize: "18px",
+          }}
+        >
+
+          <div className="col-lg-6 mb-4">
+
+            <p>
+              Investing platforms often feel
+              complicated for new users.
+              We wanted something cleaner,
+              faster and easier to trust.
+            </p>
+
+            <p>
+              Vestora combines investing,
+              portfolio tracking and market tools
+              into one platform built for
+              long-term investors.
+            </p>
+
+            <p>
+              Every screen is designed to feel
+              intuitive and fast.
+            </p>
+
+          </div>
+
+          <div className="col-lg-6 mb-4">
+
+            <p>
+              We believe pricing should be clear,
+              interfaces should stay simple,
+              and investing should feel accessible.
+            </p>
+
+            <p>
+              Vestora is growing as a product-first
+              platform focused on building useful
+              fintech tools for Indian investors.
+            </p>
+
+            <p>
+              This is just the beginning.
+            </p>
+
+          </div>
+
         </div>
+
       </div>
-    </div>
+    </section>
   );
 }
 

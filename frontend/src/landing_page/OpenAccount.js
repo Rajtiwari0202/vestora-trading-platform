@@ -1,22 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function OpenAccount() {
   return (
-    <div className="container p-5 mb-5">
-      <div className="row text-center">
-        <h1 className="mt-5">Open a Zerodha account</h1>
-        <p>
-          Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and
-          F&O trades.
-        </p>
-        <button
-          className="p-2 btn btn-primary fs-5 mb-5"
-          style={{ width: "20%", margin: "0 auto" }}
+    <section>
+      <div className="container text-center">
+
+        <h2 className="mb-3">
+          Open your Vestora account
+        </h2>
+
+        <p
+          className="text-muted mb-4"
+          style={{
+            fontSize: "18px",
+          }}
         >
-          Sign up Now
-        </button>
+          Invest with a modern platform,
+          intuitive portfolio tracking,
+          and transparent pricing.
+        </p>
+
+        <Link
+          to="/signup"
+          className="btn btn-primary px-4 py-2 fs-5"
+        >
+          Sign up now
+        </Link>
+
       </div>
-    </div>
+    </section>
   );
 }
 
