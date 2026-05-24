@@ -12,13 +12,18 @@ function Footer() {
 
         <div className="row">
 
+          {/* Brand */}
           <div className="col-md-3 mb-4">
 
-            <img
-              src="media/images/logo.svg"
-              alt="Vestora Logo"
-              style={{ width: "140px" }}
-            />
+            <h2
+              style={{
+                color: "#387ed1",
+                fontWeight: "600",
+                letterSpacing: "1px",
+              }}
+            >
+              VESTORA
+            </h2>
 
             <p className="mt-3 text-muted">
               © 2026 Vestora Trading Platform.
@@ -27,7 +32,9 @@ function Footer() {
             </p>
           </div>
 
+          {/* Company */}
           <div className="col-md-3 mb-4">
+
             <h6>Company</h6>
 
             <Link to="/about">About</Link>
@@ -42,7 +49,9 @@ function Footer() {
             <Link to="/support">Support</Link>
           </div>
 
+          {/* Account */}
           <div className="col-md-3 mb-4">
+
             <h6>Account</h6>
 
             <Link to="/signup">Open account</Link>
@@ -51,7 +60,9 @@ function Footer() {
             <Link to="/pricing">Pricing plans</Link>
           </div>
 
+          {/* Resources */}
           <div className="col-md-3 mb-4">
+
             <h6>Resources</h6>
 
             <a href="/">Documentation</a>
@@ -70,14 +81,13 @@ function Footer() {
           }}
         >
           <p>
-            Investments in the securities market are subject
-            to market risks. Please review all related
-            documents carefully before investing.
+            Investments in the securities market are subject to market risks.
+            Please review all related documents carefully before investing.
           </p>
 
           <p>
-            Vestora is a learning-focused trading platform
-            built to simulate modern investing experiences.
+            Vestora is a full-stack trading platform project built to simulate
+            modern investing experiences and understand fintech product design.
           </p>
         </div>
 

@@ -2,62 +2,92 @@ import React from "react";
 
 function Team() {
   return (
-    <section>
+    <section className="py-5">
       <div className="container">
-        <div className="row border-top pt-5">
-          <h2 className="text-center mb-5">Meet the builder</h2>
+
+        {/* Heading */}
+        <div className="row border-top pt-5 mb-5">
+          <h2 className="text-center">Meet the Builder</h2>
         </div>
 
+        {/* Main content */}
         <div
-          className="row align-items-center text-muted"
+          className="row align-items-center"
           style={{
             lineHeight: "1.9",
             fontSize: "18px",
           }}
         >
-          <div className="col-lg-6 text-center mb-4">
-            <img
-              src="media\images\RajTiwariImage.jpg"
-              alt="Raj Tiwari"
-              className="img-fluid"
+          {/* Left side */}
+          <div className="col-lg-5 text-center mb-5">
+
+            <div
               style={{
                 width: "280px",
                 height: "280px",
-                objectFit: "cover",
                 borderRadius: "50%",
+                overflow: "hidden",
+                margin: "0 auto",
+                boxShadow: "0 8px 25px rgba(0,0,0,0.12)",
               }}
-            />
+            >
+              <img
+                src="/media/images/RajTiwariImage.jpg"
+                alt="Raj Tiwari"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
 
-            <h4 className="mt-4">Raj Tiwari</h4>
+            <h2
+              className="mt-4"
+              style={{
+                color: "#387ed1",
+                fontWeight: "600",
+                letterSpacing: "1px",
+              }}
+            >
+              VESTORA
+            </h2>
 
-            <p>Founder & Full Stack Developer</p>
+            <h4 className="mt-3">Raj Tiwari</h4>
+
+            <p className="text-muted">
+              Founder • Full Stack Developer
+            </p>
           </div>
 
-          <div className="col-lg-6">
+          {/* Right side */}
+          <div className="col-lg-7 text-muted">
+
             <p>
-              I built Vestora as a full-stack fintech platform to deeply
-              understand how modern trading and investment systems are designed.
+              I built <strong>Vestora</strong> as a full-stack fintech platform
+              to understand how modern trading and investing systems are
+              designed—from clean user interfaces to portfolio dashboards and
+              backend architecture.
             </p>
 
             <p>
-              The idea started with a simple goal: create an investing platform
-              that feels clean, intuitive and trustworthy — while learning how
-              real-world fintech products handle portfolios, market workflows
-              and user experience.
+              The goal behind Vestora was to go beyond tutorials and build a
+              real product with reusable components, routing, structured pages
+              and scalable frontend architecture.
             </p>
 
             <p>
-              Vestora is being built with React, routing, reusable UI
-              components, backend APIs, authentication, portfolio management and
-              deployment — with the mindset of building a production-ready
-              product, not just another practice project.
+              This project is helping me deeply understand React, modern UI
+              development, backend integration, authentication and how fintech
+              platforms manage real-world workflows.
             </p>
 
             <p>
-              Outside of development, I enjoy problem solving, data structures &
-              algorithms, and building products that combine clean engineering
-              with strong user experience.
+              Outside development, I spend time solving DSA problems, learning
+              system design, improving problem solving and building strong
+              full-stack projects for product-based roles.
             </p>
+
           </div>
         </div>
       </div>

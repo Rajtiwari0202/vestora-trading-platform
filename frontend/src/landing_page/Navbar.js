@@ -4,36 +4,42 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <nav
-      className="navbar navbar-expand-lg border-bottom sticky-top"
+      className="navbar navbar-expand-lg border-bottom"
       style={{ backgroundColor: "#fff" }}
     >
-      <div className="container py-2">
+      <div className="container p-2">
 
-        <Link className="navbar-brand" to="/">
-          <img
-            src="media/images/logo.svg"
-            alt="Vestora"
-            style={{ width: "130px" }}
-          />
+        {/* Brand */}
+        <Link
+          to="/"
+          className="navbar-brand"
+          style={{
+            color: "#387ed1",
+            fontWeight: "600",
+            fontSize: "30px",
+            textDecoration: "none",
+            letterSpacing: "1px",
+          }}
+        >
+          VESTORA
         </Link>
 
+        {/* Mobile button */}
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-target="#navbarSupportedContent"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
+        {/* Links */}
         <div
           className="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
+          id="navbarSupportedContent"
         >
-          <ul className="navbar-nav align-items-center">
+          <ul className="navbar-nav mb-lg-0">
 
             <li className="nav-item">
               <Link className="nav-link" to="/signup">
@@ -67,7 +73,6 @@ function Navbar() {
 
           </ul>
         </div>
-
       </div>
     </nav>
   );

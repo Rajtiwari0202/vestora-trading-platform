@@ -1,21 +1,50 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function RightSection({ imageURL, productName, productDesription, learnMore }) {
+function RightSection({
+  imageURL,
+  productName,
+  productDesription,
+  learnMore,
+}) {
   return (
-    <div className="container mt-5">
-      <div className="row">
-        <div className="col-6 p-5 mt-5">
-          <h1>{productName}</h1>
-          <p>{productDesription}</p>
-          <div>
-            <a href={learnMore}>Learn More</a>
+    <section>
+      <div className="container mt-5">
+
+        <div className="row align-items-center">
+
+          <div className="col-lg-6 mb-4">
+
+            <h2 className="mb-3">
+              {productName}
+            </h2>
+
+            <p className="text-muted">
+              {productDesription}
+            </p>
+
+            {learnMore && (
+              <Link to={learnMore}>
+                Learn more
+              </Link>
+            )}
+
           </div>
+
+          <div className="col-lg-6 mb-4">
+
+            <img
+              src={imageURL}
+              alt={productName}
+              className="img-fluid"
+            />
+
+          </div>
+
         </div>
-        <div className="col-6">
-          <img src={imageURL} />
-        </div>
+
       </div>
-    </div>
+    </section>
   );
 }
 
