@@ -1,25 +1,30 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
 import axios from "axios";
 
 import GeneralContext from "./GeneralContext";
+import API_URL from "../config";
 
 import "./BuyActionWindow.css";
 
-const BuyActionWindow = ({ uid }) => {
+const BuyActionWindow = ({ uid, mode = "BUY" }) => {
   const [stockQuantity, setStockQuantity] = useState(1);
-  const [stockPrice, setStockPrice] = useState(0.0);
+  const [stockPrice, setStockPrice] = useState(0);
 
-  const handleBuyClick = () => {
-    axios.post("https://vestora-trading-platform.onrender.com/newOrder", {
-      name: uid,
-      qty: stockQuantity,
-      price: stockPrice,
-      mode: "BUY",
-    });
+  const handleOrderClick = async () => {
+    try {
+      await axios.post(`${API_URL}/newOrder`, {
+        name: uid,
+        qty: Number(stockQuantity),
+        price: Number(stockPrice),
+        mode,
+      });
 
-    GeneralContext.closeBuyWindow();
+      alert(`${mode} order placed successfully`);
+      GeneralContext.closeBuyWindow();
+    } catch (error) {
+      console.log(error);
+      alert("Order failed. Please try again.");
+    }
   };
 
   const handleCancelClick = () => {
@@ -34,16 +39,19 @@ const BuyActionWindow = ({ uid }) => {
             <legend>Qty.</legend>
             <input
               type="number"
+              min="1"
               name="qty"
               id="qty"
               onChange={(e) => setStockQuantity(e.target.value)}
               value={stockQuantity}
             />
           </fieldset>
+
           <fieldset>
             <legend>Price</legend>
             <input
               type="number"
+              min="0"
               name="price"
               id="price"
               step="0.05"
@@ -56,13 +64,18 @@ const BuyActionWindow = ({ uid }) => {
 
       <div className="buttons">
         <span>Margin required ₹140.65</span>
+
         <div>
-          <Link className="btn btn-blue" onClick={handleBuyClick}>
-            Buy
-          </Link>
-          <Link to="" className="btn btn-grey" onClick={handleCancelClick}>
+          <button
+            className={mode === "BUY" ? "btn btn-blue" : "btn btn-danger"}
+            onClick={handleOrderClick}
+          >
+            {mode}
+          </button>
+
+          <button className="btn btn-grey" onClick={handleCancelClick}>
             Cancel
-          </Link>
+          </button>
         </div>
       </div>
     </div>
