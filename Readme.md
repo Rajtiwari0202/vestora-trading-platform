@@ -1,72 +1,95 @@
 # 🚀 Vestora — Full Stack Trading Platform
 
-Vestora is a modern full-stack trading and investment platform inspired by real-world fintech applications.
-Built to deeply understand scalable frontend architecture, backend APIs, portfolio systems, trading workflows, and modern product engineering.
+Vestora is a modern full-stack trading and investment platform inspired by real-world fintech applications like Zerodha.
+
+Built to deeply understand:
+- scalable frontend systems
+- trading dashboards
+- REST APIs
+- MongoDB integration
+- deployment workflows
+- production-style architecture
 
 ---
 
-# 🌟 Features
+# 🌐 Live Deployments
 
-## Landing Platform
+## 🖥️ Frontend Website
+[Visit Frontend](https://vestora-trading-platform-rf4xpiov6.vercel.app/)
 
-* Modern responsive UI
-* Multi-page React application
-* Professional fintech-inspired design
-* Routing with React Router
-* About / Products / Pricing / Support pages
-* Signup interface
-* Reusable UI components
+## 📊 Trading Dashboard
+[Open Dashboard](https://vestora-trading-platform-dasboard.vercel.app/)
 
-## Trading Dashboard
+## ⚙️ Backend API
+[Backend API](https://vestora-trading-platform.onrender.com)
 
-* Holdings management
-* Positions tracking
-* Orders system
-* Watchlist
-* Funds section
-* Buy/Sell action window
-* Portfolio visualizations & charts
-* Dashboard analytics
+---
 
-## Backend APIs
+# ✨ Features
 
-* Express.js REST APIs
-* MongoDB Atlas integration
-* Holdings API
-* Positions API
-* Orders API
-* CORS support
-* Environment variable configuration
+## 🌍 Landing Platform
+- Modern responsive UI
+- Multi-page React application
+- Clean fintech-inspired design
+- React Router navigation
+- Signup page
+- Pricing page
+- Products showcase
+- About page
+- Support portal
+- Reusable component architecture
+
+---
+
+## 📈 Trading Dashboard
+- Holdings management
+- Positions tracking
+- Watchlist
+- Buy / Sell actions
+- Orders management
+- Portfolio analytics
+- Interactive charts
+- Funds overview
+- Dashboard UI inspired by modern broker platforms
+
+---
+
+## 🔧 Backend APIs
+- Express.js REST APIs
+- MongoDB Atlas integration
+- Holdings API
+- Positions API
+- Orders API
+- CORS enabled
+- Environment variable support
+- Deployed backend service
 
 ---
 
 # 🛠️ Tech Stack
 
 ## Frontend
-
-* React.js
-* React Router DOM
-* Bootstrap
-* Axios
+- React.js
+- React Router DOM
+- Bootstrap
+- Axios
 
 ## Dashboard
-
-* React.js
-* Chart.js
-* Material UI / Bootstrap components
+- React.js
+- Material UI
+- Chart.js
+- Context API
 
 ## Backend
-
-* Node.js
-* Express.js
-* MongoDB Atlas
-* Mongoose
+- Node.js
+- Express.js
+- MongoDB Atlas
+- Mongoose
 
 ## Deployment
-
-* Vercel (Frontend + Dashboard)
-* Render / Railway (Backend)
-* MongoDB Atlas (Database)
+- Vercel
+- Render
+- MongoDB Atlas
 
 ---
 
@@ -75,7 +98,7 @@ Built to deeply understand scalable frontend architecture, backend APIs, portfol
 ```bash
 Vestora/
 │
-├── frontend/      # Landing pages
+├── frontend/      # Landing pages website
 ├── dashboard/     # Trading dashboard
 ├── backend/       # Express backend + MongoDB
 │
@@ -84,12 +107,13 @@ Vestora/
 
 ---
 
-# ⚙️ Installation
+# ⚙️ Local Setup
 
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/vestora-trading-platform.git
+git clone https://github.com/Rajtiwari0202/vestora-trading-platform.git
+
 cd vestora-trading-platform
 ```
 
@@ -127,7 +151,7 @@ http://localhost:3001
 
 ---
 
-# 🔧 Backend Setup
+# ⚙️ Backend Setup
 
 ```bash
 cd backend
@@ -145,7 +169,7 @@ http://localhost:3002
 
 # 🔐 Environment Variables
 
-Create a `.env` file inside `backend/`
+Create `.env` inside backend folder:
 
 ```env
 MONGO_URL=your_mongodb_connection_string
@@ -156,25 +180,29 @@ PORT=3002
 
 # 📡 API Endpoints
 
-## Holdings
+## Get Holdings
 
 ```http
 GET /allHoldings
 ```
 
-## Positions
+---
+
+## Get Positions
 
 ```http
 GET /allPositions
 ```
 
-## New Order
+---
+
+## Create New Order
 
 ```http
 POST /newOrder
 ```
 
-Example Request:
+Example:
 
 ```json
 {
@@ -191,52 +219,40 @@ Example Request:
 
 This project was built to deeply learn:
 
-* Full Stack Development
-* React Architecture
-* REST APIs
-* MongoDB Integration
-* Fintech Product Design
-* Component Reusability
-* Dashboard Systems
-* State Management
-* Deployment Workflow
-* Scalable Project Structure
+- Full Stack Development
+- React Architecture
+- Dashboard Engineering
+- REST APIs
+- MongoDB Integration
+- Deployment Pipelines
+- Component Reusability
+- Fintech Product Design
+- Real-world Project Structure
 
 ---
 
-# 🚀 Deployment
+# 🚀 Deployment Architecture
 
-## Frontend & Dashboard
-
-Deploy easily on:
-
-* Vercel
-
-## Backend
-
-Deploy on:
-
-* Render
-* Railway
-
-## Database
-
-* MongoDB Atlas
+| Service | Platform |
+|---|---|
+| Frontend | Vercel |
+| Dashboard | Vercel |
+| Backend | Render |
+| Database | MongoDB Atlas |
 
 ---
 
 # 🔮 Future Improvements
 
-* Authentication & Authorization
-* JWT Login System
-* Live Stock APIs
-* Real-time market updates
-* Portfolio analytics
-* Dark mode
-* WebSockets
-* AI-based investment insights
-* Payment integration
-* Advanced charts
+- JWT Authentication
+- Real Login/Signup System
+- Live Stock APIs
+- Real-time updates
+- Dark mode
+- Advanced analytics
+- Portfolio performance tracking
+- WebSocket integration
+- AI-powered insights
 
 ---
 
@@ -244,28 +260,26 @@ Deploy on:
 
 ## Raj Tiwari
 
-Full Stack Developer passionate about:
-
-* Scalable applications
-* Fintech products
-* System design
-* Problem solving
-* Modern UI engineering
+Passionate about:
+- Full Stack Development
+- Fintech Products
+- System Design
+- Scalable Applications
+- Competitive Programming
+- Modern UI Engineering
 
 ---
 
 # 📬 Connect With Me
 
 ## GitHub
-
 https://github.com/Rajtiwari0202
 
 ## LinkedIn
-
 https://www.linkedin.com/in/rajtiwari02
 
 ---
 
-# ⭐ If you liked this project
+# ⭐ Support
 
-Give it a star ⭐ on GitHub.
+If you liked this project, give it a ⭐ on GitHub.
